@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>☺ Cygwin Installation </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div id="head">
+	<ul>
+		<li><a href="#">Cygwin</a></li>
+			<ul>
+				<li><a href="#">install cygwin</a></li>
+				<li><a href="#">Update Cygwin</a></li>
+				<li><a href="#">Search Packages</li>
+				<li><a href="#">Licensing Terms</a></li>
+			</ul>
+
+
+		
+
+	</ul>
+		
+			<ul>
+				<li><a href="#">Cygwin/X</a></li>
+			</ul>
+
+			<ul>
+				
+				
+				<li><a href="#">Cummunity</a></li>
+				<ul>
+					<li><a href="#">Reporting Problem</li>
+					<li><a href="#">Mailing Lists </a></li>
+					<li><a href="#">Newsgruops</a></li>
+					<li><a href="#">IRC channels</a></li>
+					<li class="gold"><a href="#">Gold Stars</a></li>
+					<li><a href="#">Mirror Site</a></li>
+					<li><a href="#">Donations</a></li>
+				</ul>
+			</ul>
+
+
+			<ul>
+				<li><a href="#">Documentations</a></li>
+					<ul><a href="#">FAQ</a></ul>
+					<ul><a href="#">User's Guide</a></ul>
+					<ul><a href="#">API Reference</a></ul>
+					<ul><a href="#">Acronyms</a></ul>
+
+			</ul>
+
+			<ul>
+				
+				<li><a href="#">Contributing</a></li>
+					<ul>
+						<li><a href="#">Snapshots</a></li>
+						<li><A href="#">Source in Git</A></li>
+						<li><a href="#">Cygwin Packages</li>
+					</ul>
+			</ul>
+
+			<ul>
+				
+				<li><a href="#">Related Site</a></li>
+			</ul>
+
+</div>
+
+
+<div class="most-head">
+
+	<div class="title-">
+
+		<p><strong> Cygwin</strong></p>
+		
+
+	</div>
+
+		<span> Get that <a href="https://www.linuxfoundation.org/">Linux</a> - on Windows</span>
+	
+	<div class="install-">
+
+	<h1>Install and Updating Cygwin Packages</h1>
+	
+
+	</div>
+
+<div class="install1">
+
+	<p><strong>Install and Updating Cygwin Packages for 64-bit versions for Windows</strong></p>
+</div>
+
+	<p>Run <a href="#">setup-x86_64.exe</a> any time you want to update or install a Cygwin package for 64-bit windows. The <A href="#">signature</A> for <a href="#">setup-x86_64.exe</a> can be used to verify the validity of this binary.</p>
+
+<div class="install2">
+
+	<p><strong>Install and Updating Cygwin Packages</strong></p>
+
+</div>
+	<p>Run <a href="#">setup-x86.exe</a> any time you want to update or install a Cygwin package for 32-bit windows. The <a href="#">signature</a> for <a href="#">setup-x86.exe</a> can be used to verify the validity of this binary.</p>
+	<p>See <a href="#">this mail</a> for more details</p>
+
+
+<div class="install3">
+	<p><strong>General installation notes</strong></p>
+
+</div>
+	<p>When installing packages for the first time, the setup program<i>does not install every package.</i>Only the <B>minimal base packages</b> 	from the Cygwin distribution are installed by default, which takes up about 100 MB.</B>
+
+	<p>Clicking on categories and packages in the setup program package installation screen allows you to select what is installed or updated.</p>
+
+	<p>Individual packages like <i>bash, gcc, less,</i>etc. are released independently of the Cygwin DLL, so the Cygwin DLL version is not useful as a general Cygwin release number. The setup program tracks the versions of all installed components and provides the mechanism for <b>installing</b> or <b>updating</b> everything available from this site for Cygwin.</p>
+
+	<p>Once you've installed your desired subset of the Cygwin distribution, the setup program will remember what you selected, so re-running it will update your system with any new package releases.</p>
+
+	<p>On Windows Vista and later, the setup program will check by default if it runs with administrative privileges and, if not, will try to elevate the process. If you want to avoid this behaviour and install under an unprivileged account just for your own usage, run setup with the --no-admin option.</p>
+
+
+
+	<div class="install4">
+			<p><strong>Q: How do I add a package to my existing Cygwin installation?</strong></p>
+
+	</div>
+
+			<p>A: Run the setup program and select the package you want to add.</p>
+			<p>A: Run the setup program and select the package you want to add.</p>
+
+
+	<div class="install5">
+
+		<p><strong>Q: Is there a command-line installer?</strong></p>
+		
+	</div>		
+
+		<p>A: Yes and no. The setup program understands <a href="#">command-line arguments</a> which allow you to control its behavior and choose individual packages to install. While this provides some functionality similar to such tools as apt-get or yum it is not as full-featured as those package managers.</p>
+
+		<div class="install6">
+
+			<p><strong>Q: Why not use apt, yum, my favourite package manager, etc.?</strong></p>
+
+		</div>
+
+		<p>A: The basic reason for not using a more full-featured package manager is that such a program would need full access to all of Cygwin's POSIX functionality. That is, however, difficult to provide in a Cygwin-free environment, such as exists on first installation. Additionally, Windows does not easily allow overwriting of in-use executables so installing a new version of the Cygwin DLL while a package manager is using the DLL is problematic.</p>
+
+	<div class="install6">
+		
+		<p><strong>Q: How do I install everything?</strong></p>
+
+	</div>
+
+	<p>A: You do not want to do this! This will install an enormous number of packages that you will never use, including debuginfo and source for every package.</p>
+
+	<p>If you really <i>must</i> do this, clicking on the "Default" label next to the "All" category to change it to "Install" will mark every Cygwin package for installation. Be advised that this will download and install tens of gigabytes of files to your computer.</p>
+
+
+	<div class="install7">
+		
+		<p><strong>Q: How do I verify the signature of setup?</strong></p>
+	</div>
+
+	<div class="font-">
+	<p>A: e.g.</p>
+
+	$ gpg --recv-key 1A698DE9E2E56300<br/>
+	gpg: requesting key 1A698DE9E2E56300 from hkp server keys.gnupg.net<br/>
+	gpg: key 1A698DE9E2E56300: "Cygwin <cygwin@cygwin.com>" imported<br/>
+	gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model<br/>
+	gpg: depth: 0  valid:   8  signed:   2  trust: 0-, 0q, 0n, 0m, 0f, 8u<br/>
+	gpg: depth: 1  valid:   2  signed:   0  trust: 2-, 0q, 0n, 0m, 0f, 0u<br/>
+	gpg: Total number processed: 1<br/>
+	gpg:               imported: 1  (RSA: 1)<br/></p>
+
+	<p>$ gpg --keyid-format=long --with-fingerprint --verify setup-x86_64.exe.sig setup-x86_64.exe<br/>
+	gpg: Signature made 12 Mar 2020 16:26:58 GMT<br/>
+	gpg:                using DSA key A9A262FF676041BA<br/>
+	gpg: Good signature from "Cygwin <cygwin@cygwin.com>"<br/>
+	Primary key fingerprint: 1169 DF9F 2273 4F74 3AA5  9232 A9A2 62FF 6760 41BA<br/>
+	gpg: Signature made 12 Mar 2020 16:26:58 GMT<br/>
+	gpg:                using RSA key 1A698DE9E2E56300<br/>
+	gpg: Good signature from "Cygwin <cygwin@cygwin.com>"<br/>
+	gpg: WARNING: This key is not certified with a trusted signature!<br/>
+	gpg:          There is no indication that the signature belongs to the owner.<br/>
+	Primary key fingerprint: 5640 5CF6 FCC8 1574 682A  5D56 1A69 8DE9 E2E5 6300</p>
+
+</div>
+
+	<div class="install8">
+		
+		<p><strong>Q: What's the hash of setup?</strong></p>
+
+	</div>
+
+			<p>A: See <a href="#"> here</a></p>
+
+
+	<div class="install9">
+		
+		<p><strong>Q: How do I help improve setup?</strong></p>
+
+	</div>		
+
+		<div class="install10">
+			
+				<p>A: See the <a href="#">setup</a> project page for more information.</p>
+
+		</div>
+
+		
+
+
+
+
+
+
+</div>
+</body>
+</html>
